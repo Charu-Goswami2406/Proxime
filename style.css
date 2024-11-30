@@ -1,0 +1,272 @@
+/* Reset margins and set height to 100% for both html and body */
+html, body {
+    height: auto;
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Ensure the background container takes up the full screen */
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* This ensures the container covers the full screen */
+    background-image: url('images/img3.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center; /* Centers the image */
+    /* opacity: 0.6; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index:0;
+}
+
+/* Dark overlay for the background image */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
+    z-index: 1; /* Makes sure the overlay stays behind the text */
+}
+
+/* Center the text */
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: rgb(233, 236, 241);
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Proxima Nova', sans-serif;
+    z-index: 2;
+}
+
+.text h3 {
+    font-size: 1.1em; /* Larger font size for the main heading */
+    margin: 0;
+}
+
+/* Style for the smaller heading */
+.text h6 {
+    font-size: 0.5em; /* Smaller font size for the secondary heading */
+    margin-top: 10px; /* Adds some space between the headings */
+    font-weight: lighter; /* Makes the smaller heading appear more subtle */
+}
+
+/* Who We Are Section */
+.who-we-are {
+    background-color: #e9ecef; /* Light gray background for the section */
+    padding: 40px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+/* Content within the Who We Are section */
+.who-we-are-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.who-we-are h2 {
+    font-size: 2.5em;
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 20px;
+}
+
+.who-we-are p {
+    font-size: 1.2em;
+    color: #555; /* Slightly lighter text color */
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Why Proxime Section */
+.why-proxime {
+    background-color: #ffffff; /* Light gray background for the section */
+    padding: 40px;
+    text-align: center;
+    min-height: 100vh; /* Ensures the section takes the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content within the Why Proxime section */
+.why-proxime-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.why-proxime h2 {
+    font-size: 2.5em;
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 20px;
+}
+
+.why-proxime ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.why-proxime li {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.why-proxime li strong {
+    color: #333; /* Darker color for the headings of each point */
+}
+
+* {
+    scroll-snap-type: y mandatory; /* Apply snap on vertical scrolling */
+}
+
+.background-container, .who-we-are, .why-proxime {
+    scroll-snap-align: start; /* Each section will snap to the start of the viewport */
+}
+
+/* Founders Section */
+.founders {
+    background-color: #e9ecef; /* Light gray background */
+    padding: 40px;
+    text-align: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.founders-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.founders h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Founders Cards */
+.founders-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.founder-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.founder-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.founder-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.founder-details {
+    padding: 20px;
+}
+
+.founder-details h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.founder-details p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.founder-details strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.login-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    z-index: 10; /* Ensure the button is above the background */
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add a small footer */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
