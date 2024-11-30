@@ -77,7 +77,7 @@
             <div class="founder-card">
                 <img src="images/placeholder.png" alt="Founder 1" class="founder-image">
                 <div class="founder-details">
-                    <h3>Ansh Verma</h3>
+                    <h3> XYZ</h3>
                     <p>AI & ML Engineer</p>
                 </div>
             </div>
@@ -85,7 +85,7 @@
             <div class="founder-card">
                 <img src="images/placeholder.png" alt="Founder 2" class="founder-image">
                 <div class="founder-details">
-                    <h3>Charu Goswami</h3>
+                    <h3>ABC </h3>
                     <p>Fullstack Developer</p>
                 </div>
             </div>
