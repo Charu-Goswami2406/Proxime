@@ -11,6 +11,10 @@
 </head>
 <body>
 
+  <?php include '../components/navbar.php';?>
+
+  <div class="container-fluid d-flex">
+
   <!-- Side Panel -->
   <div class="side-panel">
     <h3>PROXIME</h3>
@@ -167,17 +171,12 @@
     </li>
     </ul>
   </div>
+</div>
 
-    <!-- Logout Button -->
-    <a href="../index.php" class="logout-btn">
-      <i class="fas fa-sign-out-alt"></i> Logout
-    </a>
-  </div>
-
-  <!-- Main Content Area -->
-  <div class="content">
-    <h1>Comming Soon......</h1>
-  </div>
+  <!-- Footer -->
+  <div class="footer text-center">
+        &copy; 2024 Proxime. All rights reserved.
+    </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
