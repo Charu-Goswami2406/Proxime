@@ -19,23 +19,34 @@
         </div>
     </div>
 
-    <!-- Who we are section -->
-     <div class="who-we-are">
-        <div class="who-we-are-content">
-            <h2>Who We Are??</h2>
+    <!-- About Us Section -->
+<div class="about-us">
+    <h2 class="about-heading">About Us</h2>
+    <p class="about-subtitle">Pioneering Real Estate Excellence</p>
+
+    <div class="about-content">
+        <div class="about-text">
+            <h3>Our Mission and Values</h3>
             <p>
-                At Proxime, we specialize in developing innovative software solutions designed to streamline operations 
-                and enhance efficiency for real estate developers. Our flagship product, an advanced ERP system, is tailored specifically 
-                to meet the unique needs of the real estate industry, providing a comprehensive suite of tools to manage projects, 
-                finances, inventory, sales, and more.
+                At Proxime, our mission is to transform the real estate experience through innovation, transparency, and trust. 
+                We are committed to delivering exceptional ERP solutions tailored for developers to enhance project management, 
+                streamline operations, and achieve business goals effectively.
             </p>
             <p>
-                With years of expertise in both technology and real estate, we understand the complexities developers face
-                in today’s fast-paced market. Our ERP system empowers developers to make data-driven decisions, optimize resources, 
-                reduce operational costs, and ensure projects are delivered on time and within budget.
+                By prioritizing technology, teamwork, and ethical practices, Proxime empowers real estate businesses to optimize 
+                resources, make data-driven decisions, and build lasting client relationships. We ensure that every investment 
+                and project journey is seamless, efficient, and rewarding.
             </p>
         </div>
-     </div>
+
+        <!-- Images -->
+        <div class="about-images">
+            <img src="./images/flatimg3.jpg" alt="Team Meeting" class="about-img img-up">
+            <img src="./images/img1.jpg" alt="Team Discussion" class="about-img img-down">
+        </div>
+    </div>
+</div>
+
 
      <!-- Why Choose us?? -->
 
@@ -68,32 +79,64 @@
 </div>
 
 
-    <!-- Founders Section -->
+<!-- Founders Section -->
 <div class="founders">
     <div class="founders-content">
-        <h2>Meet Our Founders</h2>
+        <h2 class="team">Our Team</h2>
         <div class="founders-cards">
             <!-- Founder 1 -->
             <div class="founder-card">
-                <img src="images/placeholder.png" alt="Founder 1" class="founder-image">
-                <div class="founder-details">
-                    <h3> XYZ</h3>
-                    <p>AI & ML Engineer</p>
+                <div class="founder-image" style="background-image: url('images/Charu.jpg');">
+                    <div class="founder-overlay">
+                        <h3>Charu Goswami</h3>
+                        <p>Fullstack Developer</p>
+                    </div>
                 </div>
             </div>
             <!-- Founder 2 -->
             <div class="founder-card">
-                <img src="images/placeholder.png" alt="Founder 2" class="founder-image">
-                <div class="founder-details">
-                    <h3>ABC </h3>
-                    <p>Fullstack Developer</p>
+                <div class="founder-image" style="background-image: url('images/placeholder.png');">
+                    <div class="founder-overlay">
+                        <h3>Ansh Verma</h3>
+                        <p>Developer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Founder 3 -->
+            <div class="founder-card">
+                <div class="founder-image" style="background-image: url('images/placeholder.png');">
+                    <div class="founder-overlay">
+                        <h3>Ayush Kumar Jha</h3>
+                        <p>AI & ML Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Founder 4 -->
+            <div class="founder-card">
+                <div class="founder-image" style="background-image: url('images/Anchal.jpg');">
+                    <div class="founder-overlay">
+                        <h3>Anchal Bhandari</h3>
+                        <p>Data Analyst</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Founder 5 -->
+            <div class="founder-card">
+                <div class="founder-image" style="background-image: url('images/placeholder.png');">
+                    <div class="founder-overlay">
+                        <h3>Deepak Chauhan</h3>
+                        <p>ML Engineer</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
-        &copy; 2024 Proxime. All rights reserved.
-    </div>
+</div>
+
+<div class="footer">
+    &copy; 2024 Proxime. All rights reserved.
+</div>
+
 </div>
 </body>
 </html>

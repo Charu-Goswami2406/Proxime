@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Poppins', Arial, sans-serif; /* Modern font */
-    background: linear-gradient(135deg, #5058e7, #d2dae9); /* Beautiful gradient background */
+    background: linear-gradient(135deg, teal,black);
     color: #333; /* Neutral text color */
     overflow: hidden; /* Remove scroll bars */
 }
@@ -89,7 +89,7 @@ html, body {
     padding: 12px;
     font-size: 18px;
     font-weight: bold;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #e20ce6, #061023);
     color: white;
     border: none;
     border-radius: 25px;

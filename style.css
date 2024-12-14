@@ -59,39 +59,71 @@ html, body {
     font-weight: lighter; /* Makes the smaller heading appear more subtle */
 }
 
-/* Who We Are Section */
-.who-we-are {
-    background-color: #e9ecef; /* Light gray background for the section */
-    padding: 40px;
+/* About Us Section */
+.about-us {
+    padding: 50px 10%;
     text-align: center;
-    font-family: 'Arial', sans-serif;
-    min-height: 100vh;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
+    background-color: #f9f9f9;
 }
 
-/* Content within the Who We Are section */
-.who-we-are-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.who-we-are h2 {
+.about-heading {
     font-size: 2.5em;
-    color: #333; /* Dark color for the heading */
-    margin-bottom: 20px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.who-we-are p {
+.about-subtitle {
     font-size: 1.2em;
-    color: #555; /* Slightly lighter text color */
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto;
+    color: #666;
+    margin-bottom: 30px;
 }
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-text h3 {
+    font-size: 1.8em;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-images {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.about-img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-up {
+    transform: translateY(-10px); /* Slightly move up */
+}
+
+.img-down {
+    transform: translateY(10px); /* Slightly move down */
+}
+
 
 /* Why Proxime Section */
 .why-proxime {
@@ -141,74 +173,66 @@ html, body {
 }
 
 /* Founders Section */
-.founders {
-    background-color: #e9ecef; /* Light gray background */
-    padding: 40px;
-    text-align: center;
-    min-height: 100vh;
-    box-sizing: border-box;
-}
-
+/* Founders Section Styling */
 .founders-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    text-align: center;
+    margin: 50px 0;
 }
 
-.founders h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 40px;
-}
-
-/* Founders Cards */
 .founders-cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .founder-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-}
-
-.founder-card:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .founder-image {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #ddd;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
 }
 
-.founder-details {
-    padding: 20px;
+/* Hover zoom effect */
+.founder-card:hover .founder-image {
+    transform: scale(1.1);
 }
 
-.founder-details h3 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 10px;
+/* Overlay */
+.founder-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.2rem;
+    padding: 0 10px;
 }
 
-.founder-details p {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 10px;
+/* Show overlay on hover */
+.founder-card:hover .founder-overlay {
+    opacity: 1;
 }
 
-.founder-details strong {
-    font-weight: bold;
-    color: #333;
-}
 
 .card-container {
     display: grid;
@@ -269,4 +293,10 @@ html, body {
     font-size: 12px;
     color: black;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.team{
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
 }
