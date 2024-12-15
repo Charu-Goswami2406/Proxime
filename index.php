@@ -86,7 +86,7 @@
         <div class="founders-cards">
             <!-- Founder 1 -->
             <div class="founder-card">
-                <div class="founder-image" style="background-image: url('images/Charu.jpg');">
+                <div class="founder-image" style="background-image: url('images/placeholder.png');">
                     <div class="founder-overlay">
                         <h3>Charu Goswami</h3>
                         <p>Fullstack Developer</p>
@@ -95,7 +95,7 @@
             </div>
             <!-- Founder 2 -->
             <div class="founder-card">
-                <div class="founder-image" style="background-image: url('images/placeholder.png');">
+                <div class="founder-image" style="background-image: url('images/Ansh.jpg');">
                     <div class="founder-overlay">
                         <h3>Ansh Verma</h3>
                         <p>Developer</p>

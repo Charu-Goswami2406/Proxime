@@ -22,7 +22,7 @@
         const images = [
             '../../images/flatimg3.jpg',
             '../../images/flatimg2.jpg',
-            '../../images/flatimg3.jpg'
+            '../../images/flatimg1.jpg'
         ];
         let index = 0;
 
@@ -30,7 +30,7 @@
         setInterval(() => {
             heroSection.style.backgroundImage = `url('${images[index]}')`;
             index = (index + 1) % images.length;
-        }, 3000); // Change every 3 seconds
+        }, 2000); // Change every 2 seconds
     </script>
 
     <!-- Main Content -->
@@ -85,8 +85,6 @@
                 <div class="grid">
                     <img src="../../images/img1.jpg" alt="Image 1">
                     <img src="../../images/img3.jpg" alt="Image 2">
-                    <img src="../../images/flatimg1.jpg" alt="Image 3">
-                    <img src="../../images/flatimg2.jpg" alt="Image 4">
                 </div>
             </div>
 
