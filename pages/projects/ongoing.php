@@ -53,7 +53,7 @@
             }
 
             // Fetch projects from database
-            $sql = "SELECT title, description FROM ongoing_projects"; 
+            $sql = "SELECT title, description FROM ongoing_project"; 
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {

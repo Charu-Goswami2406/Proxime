@@ -29,7 +29,7 @@
     }
 
     // Fetch upcoming projects
-    $sql = "SELECT * FROM upcoming_projects ORDER BY expected_completion ASC";
+    $sql = "SELECT * FROM upcoming_project ORDER BY expected_completion ASC";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

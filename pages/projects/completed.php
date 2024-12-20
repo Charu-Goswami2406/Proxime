@@ -64,7 +64,7 @@
         }
 
         // Fetch completed projects from the database
-        $sql = "SELECT title, description, completion_date, project_images FROM completed_projects";
+        $sql = "SELECT title, description, completion_date, project_images FROM completed_project";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
